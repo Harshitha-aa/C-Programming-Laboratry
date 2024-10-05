@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+   int t,e,m,s,ss,tot,avg;
+   printf("tamil: ");
+   scanf("%d",&t);
+   printf("English: ");
+   scanf("%d",&e);
+   printf("Maths: ");
+   scanf("%d",&m);
+   printf("Science: ");
+   scanf("%d",&s);
+   printf("Social Science: ");
+   scanf("%d",&ss);
+   tot=t+e+m+s+ss;
+   printf("\nTotal: %d",tot);
+   avg=tot/5;
+   printf("\nAvg: %d", avg);
+   if(tot>450)
+   {
+       printf("\n'A' grade");
+   }
+   else if(tot>400)
+   {
+       printf("\n'B' grade");
+   }
+   else if(tot>350)
+   {
+       printf("\n'C' grade");
+   }
+   else if(tot>300)
+   {
+       printf("\n'D' grade");
+   }
+   else if(tot<50)
+  {
+      printf("\nfail");
+  }
+  
+   
+   
+    return 0;
+}
