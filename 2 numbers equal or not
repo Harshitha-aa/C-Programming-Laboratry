@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a==b)
+    {
+        printf("\nthe numbers are equal");
+    }
+    else
+    {
+        printf("\nthe numbers are not equal");
+    }
+   
+    
+    return 0;
+}
