@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+
+{
+   float temperature;
+   float c;
+   scanf("%f",&temperature);
+   c=(5.0/9.0)*(temperature-32.0);
+   printf("%.2f",c);
+}
