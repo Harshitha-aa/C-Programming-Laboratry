@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+   
+  int i,x,tot;
+  scanf("%d",&x);
+  for(i=1;i<=x;i++)
+  {
+      tot+=i*3;
+  }
+  printf("%d",tot);
+}
