@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int k=4;
+    int m,cm;
+    m=k*1000;
+    cm=k*100000;
+    printf("\n%d",m);
+    printf("\n%d",cm);
+    
+    return 0;
+}
