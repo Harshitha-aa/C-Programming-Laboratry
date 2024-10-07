@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int fact,n;
+    float e=2.71,pi=3.14;
+    scanf("%d",&n);
+    fact=sqrt(2)*sqrt(pi)*sqrt(n)*pow(n/e,n);
+    printf("%d",fact);
+    return 0;
+}
