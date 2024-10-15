@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum=0;
+    scanf("%d",&n);
+    int marks[n];
+    for(int i=0;i<n;i++)
+    {
+        printf("roll no %d: ",i+1);
+        scanf("%d",&marks[i]);
+        sum=sum+marks[i];
+    }
+    int max=marks[0],min=marks[0],maxroll,minroll;
+    for(int i=1;i<n;i++)
+    {
+        if(marks[i]>max)
+        {
+            max=marks[i];
+            maxroll=i+1;
+        }
+       if(marks[i]<min)
+        {
+            min=marks[i];
+           minroll=i+1;
+        }
+    }
+    printf("roll no%d=%d\n",maxroll,max);
+    printf("roll no%d=%d\n",minroll,min);
+    printf("avg=%d\n",sum/n);
+}
