@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int n,se=0,so=0,diff;
+    scanf("%d",&n);
+    int num[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&num[i]);
+        if(num[i]%2==0)
+        {
+           se=se+num[i];
+        }
+        else
+        {
+            so=so+num[i];
+        }
+    }
+    printf("sum of odd numbers= %d\n",so);
+    printf("sum of even numbers= %d\n",se);
+    printf("difference= %d",so-se);
+    return 0;
+}
