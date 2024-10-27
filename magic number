@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int n,no=n,sum,c,rem,num,rev=0,s=sum;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        rem=n%10;
+        sum=sum+rem;
+        n=n/10;
+    }
+    printf("sum=%d\n",sum);
+    while(sum!=0)
+    {
+        rem=sum%10;
+        rev=rev*10+rem;
+        sum=sum/10;
+    }
+    printf("rev of sum=%d\n",rev);
+    
+    num=sum*rev;
+    printf("%d*%d=%d\n",s,rev,num);
+    if(num==no)
+    {
+        printf("magic number\n");
+    }
+    else
+    {
+        printf("not a magic number\n");
+    }
+}
