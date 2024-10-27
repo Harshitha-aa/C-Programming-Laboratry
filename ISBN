@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum=0;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=n;i>0;i++)
+    {
+        scanf("%d",&arr[i]);
+        sum=sum+arr[i]*i;
+    }
+    printf("%d",sum);
+    if(sum%11==0)
+    {
+        printf("vaid ISBN");
+    }
+    else
+    {
+        printf("invalid ISBN");
+    }
+    
+    
+}
