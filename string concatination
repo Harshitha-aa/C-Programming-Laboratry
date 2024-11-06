@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[20],b[20];
+    scanf("%s%s",a,b);
+    int l1=0,l2=0;
+    while(a[l1]!='\0')
+    {
+        l1++;
+    }
+    while(b[l2]!='\0')
+    {
+        l2++;
+    }
+    char c[(l1+l2)-1];
+    int i=0,j=0;
+    while(a[i]!='\0')
+    {
+        c[i]=a[i];
+        i++;
+    }
+    while(b[j]!='\0')
+    {
+        c[i]=b[j];
+        i++;
+        j++;
+    }
+    c[i]='\0';
+    printf("%s\n",c);
+    printf("%d\n",strlen(c));
+    
+}
