@@ -1,0 +1,27 @@
+#include<stdio.h>
+int symmetric(int n,int m,int a[n][m])
+{
+   if(n==m)
+    {
+        return 1;
+    }
+    else
+    {
+    return 0;
+    }
+}
+int main()
+{
+    int n,m;
+    scanf("%d%d",&n,&m);
+     int a[n][m];
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+        scanf("%d",&a[i][j]);
+        }
+    }
+    printf("%d",symmetric(n,m,a));
+    return 0;
+}
