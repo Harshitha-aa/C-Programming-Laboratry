@@ -1,0 +1,73 @@
+#include<stdio.h>
+int identity(int n,int m,int a[n][m])
+{
+    int If=1,uf=1,lf=1;
+   for(int i=0;i<n;i++)
+   {
+       for (int j=0;j<m;j++)   
+       {
+           if(i==j)
+           {
+               if(a[i][j]==1)
+               {
+                   If=1;
+               }
+               else
+               {
+                   If=0;
+               }
+           }
+           else if(i>j)
+           {
+               if(a[i][j]==0)
+               {
+                   lf=1;
+               }
+               else
+               {
+                   lf=0;
+               }
+           }
+           else if(i<j)
+           {
+               if(a[i][j]==0)
+               {
+                   uf=1;
+               }
+               else
+               {
+                   uf=0;
+               }
+           }
+       }
+   }
+   if(If==1)
+   {
+       if(lf==1)
+       {
+           if(uf==1)
+           {
+               return 1;
+           }
+       }
+   }
+   else
+   {
+       return 0;
+   }
+}
+int main()
+{
+    int n,m;
+    scanf("%d%d",&n,&m);
+     int a[n][m];
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+        scanf("%d",&a[i][j]);
+        }
+    }
+    printf("%d",identity(n,m,a));
+    return 0;
+}
