@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    float f=0,sqr=n/2;
+    while(sqr!=f)
+    {
+        f=sqr;
+        sqr=((n/f)+f)/2;
+    }
+    printf("%.2f",sqr);
+    return 0;
+}
