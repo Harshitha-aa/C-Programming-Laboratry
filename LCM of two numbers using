@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int n,m,max,num;
+    scanf("%d%d",&n,&m);
+    max=(n>m)?n:m;
+    num=max;
+    while(1)
+    {
+        if(max%n==0 && max%m==0)
+        {
+            printf("%d",max);
+            break;
+        }
+        max=max+num;
+    }
+    return 0;
+    
+}
