@@ -1,0 +1,25 @@
+if (pricesSize == 0) {
+        return 0; // If no prices, no profit.
+    }
+
+    int minPrice = prices[0]; // Start with the first price as the minimum
+    int maxProfit = 0; // Initially, no profit
+
+    // Iterate through the prices starting from the second day
+    for (int i = 1; i < pricesSize; i++) {
+        if (prices[i] < minPrice) {
+            minPrice = prices[i];
+        }
+        // Calculate the potential profit for the current price
+        int profit = prices[i] - minPrice;
+
+        // Update maxProfit if the current profit is higher
+        if (profit > maxProfit) {
+            maxProfit = profit;
+        }
+
+        // Update the minPrice if the current price is lower than the previous minimum
+        
+    }
+
+    return maxProfit;
