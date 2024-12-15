@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    struct marks
+    {
+        char sub[10];
+        int mark;
+    };
+    int n;
+    printf("enter no of records :");
+    scanf("%d",&n);
+    struct marks ob[n];
+    struct marks *p;
+    p=malloc(sizeof(int)*sizeof(char));
+    for(int i=0;i<n;i++)
+    {
+    printf("enter sub name and mark :");
+    scanf(" %s  %d",&p[i]->sub,&p[i]->mark);
+    }
+    for(int i=0;i<n;i++)
+    {
+        printf("%s  %d",p[i]->sub,p[i]->mark);
+    }
+    return 0;
+}
