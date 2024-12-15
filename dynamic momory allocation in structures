@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    struct name
+    {
+        int id;
+        int age;
+    };
+    struct name *p;
+    p=malloc(2*sizeof(int));
+    scanf("%d",&p->id);
+    scanf("%d",&p->age);
+    printf("%d %d",p->age,p->id);
+}
