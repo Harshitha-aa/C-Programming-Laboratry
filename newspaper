@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int X; // Number of copies sold
+    int A; // Cost of each copy (selling price)
+    int B; // Cost spent by the agency on each newspaper
+    int fixed_cost = 100; // Fixed cost for storage and delivery
+    int profit; // Profit obtained
+
+    // Taking input from the user
+    printf("Number of copies sold: ");
+    scanf("%d", &X);
+
+    printf("Cost of each copy: ");
+    scanf("%d", &A);
+
+    printf("Cost spent by agency on each newspaper: ");
+    scanf("%d", &B);
+
+    // Calculating profit
+    profit = (X * A) - (X * B) - fixed_cost;
+
+    // Displaying the result
+    printf("The profit obtained: Rs.%d\n", profit);
+
+    return 0;
+}
