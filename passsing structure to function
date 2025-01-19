@@ -1,0 +1,35 @@
+#include<stdio.h> //passing members
+  void print(int a,int b)
+  {
+      printf("%d",a);
+  }
+int main()
+{
+    struct details
+  {
+      int age;
+      char gender;
+  }ob;
+  ob.age=23;
+  ob.gender='a';
+  print(ob.age,ob.gender);
+  return 0;
+}
+#include<stdio.h> //passing structure object
+struct details
+  {
+      int age;
+      char gender;
+  }ob;
+  void print(struct details ob)
+  {
+      printf("%d",ob.age);
+  }
+int main()
+{
+    ob.age=23;
+    ob.gender='f';
+  print(ob);
+  
+  return 0;
+}
