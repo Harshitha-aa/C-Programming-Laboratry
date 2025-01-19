@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+// Function to find GCD using recursion
+int findGCD(int a, int b) {
+    // Base case: If second number becomes 0, return the first number
+    if (b == 0)
+        return a;
+    // Recursive case: Call the function with b and the remainder of a divided by b
+    return findGCD(b, a % b);
+}
+
+int main() {
+    int num1, num2;
+
+    // Input two numbers
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Find and print the GCD
+    int gcd = findGCD(num1, num2);
+    printf("GCD of %d and %d is: %d\n", num1, num2, gcd);
+
+    return 0;
+}
+
