@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Function to check if a year is a leap year
+int isLeapYear(int year) {
+    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+}
+
+// Function to calculate friendship quality
+int friendshipQuality(int year1, int year2) {
+    if (isLeapYear(year1) && isLeapYear(year2)) {
+        // Both years are leap years
+        return (year1 > year2 ? year1 : year2) / 4;
+    } else if (!isLeapYear(year1) && !isLeapYear(year2)) {
+        // Both years are common
+        return abs(year1 - year2) * 100;
+    } else {
+        // One leap year and one common year
+        return (year1 < year2 ? year1 : year2);
+    }
+}
+
+int main() {
+    int year1, year2;
+
+    printf("Enter the first year: ");
+    scanf("%d", &year1);
+
+    printf("Enter the second year: ");
+    scanf("%d", &year2);
+
+    int quality = friendshipQuality(year1, year2);
+    printf("Friendship Quality: %d\n", quality);
+
+    return 0;
+}
