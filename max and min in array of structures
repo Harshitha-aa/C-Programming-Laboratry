@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+
+// Define the structure for storing book details
+struct Book {
+    char title[50];
+    char author[50];
+    float price;
+};
+
+int main() {
+    struct Book books[3]; // Array to store details of 3 books
+    int i, maxIndex = 0, minIndex = 0;
+
+    // Input details for 3 books
+    for (i = 0; i < 3; i++) {
+        printf("Enter details for book %d:\n", i + 1);
+        printf("Title: ");
+        scanf(" %[^\n]", books[i].title); // Read string with spaces
+        printf("Author: ");
+        scanf(" %[^\n]", books[i].author);
+        printf("Price: ");
+        scanf("%f", &books[i].price);
+        printf("\n");
+    }
+
+    // Find the most expensive and the lowest priced books
+    for (i = 1; i < 3; i++) {
+        if (books[i].price > books[maxIndex].price) {
+            maxIndex = i;
+        }
+        if (books[i].price < books[minIndex].price) {
+            minIndex = i;
+        }
+    }
+
+    // Display the most expensive book
+    printf("Most Expensive Book:\n");
+    printf("Title: %s\n", books[maxIndex].title);
+    printf("Author: %s\n", books[maxIndex].author);
+    printf("Price: %.2f\n\n", books[maxIndex].price);
+
+    // Display the lowest priced book
+    printf("Lowest Priced Book:\n");
+    printf("Title: %s\n", books[minIndex].title);
+    printf("Author: %s\n", books[minIndex].author);
+    printf("Price: %.2f\n", books[minIndex].price);
+
+    return 0;
+}
