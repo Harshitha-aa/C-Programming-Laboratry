@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+// Function to check if the matrix is a magic square
+int findMagic(int matrix[10][10], int n) {
+    int sum = 0, diag1 = 0, diag2 = 0;
+
+    // Calculate the sum of the first row
+    for (int i = 0; i < n; i++) {
+        sum += matrix[0][i];
+    }
+
+    // Calculate the sum of the diagonals
+    for (int i = 0; i < n; i++) {
+        diag1 += matrix[i][i];
+        diag2 += matrix[i][n - 1 - i];
+    }
+
+    // Check if diagonals are equal to the sum
+    if (diag1 != sum || diag2 != sum) {
+        return 0;
+    }
+
+    // Check each row and column
+    for (int i = 0; i < n; i++) {
+        int rowSum = 0, colSum = 0;
+        for (int j = 0; j < n; j++) {
+            rowSum += matrix[i][j];
+            colSum += matrix[j][i];
+        }
+        if (rowSum != sum || colSum != sum) {
+            return 0;
+        }
+    }
+
+    return 1; // It's a magic square
+}
+
+int main() {
+    int n, matrix[10][10];
+
+    printf("Enter the size of the square matrix: ");
+    scanf("%d", &n);
+
+    printf("Enter the elements of the matrix:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    if (findMagic(matrix, n)) {
+        printf("The matrix is a magic square.\n");
+    } else {
+        printf("The matrix is not a magic square.\n");
+    }
+
+    return 0;
+}
