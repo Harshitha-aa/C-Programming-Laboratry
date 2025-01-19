@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+// Function to sort the array
+void sortArray(int A[], int n) {
+    int count0 = 0, count1 = 0, count2 = 0;
+
+    // Count the number of 0s, 1s, and 2s
+    for (int i = 0; i < n; i++) {
+        if (A[i] == 0) count0++;
+        else if (A[i] == 1) count1++;
+        else if (A[i] == 2) count2++;
+    }
+
+    // Fill the array with 0s, 1s, and 2s in order
+    for (int i = 0; i < count0; i++) A[i] = 0;
+    for (int i = count0; i < count0 + count1; i++) A[i] = 1;
+    for (int i = count0 + count1; i < n; i++) A[i] = 2;
+}
+
+int main() {
+    int n;
+
+    // Input array size
+    printf("Enter array size: ");
+    scanf("%d", &n);
+
+    int A[n];
+    
+    // Input array elements
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &A[i]);
+    }
+
+    // Sort the array
+    sortArray(A, n);
+
+    // Output the sorted array
+    printf("Sorted array: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", A[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
