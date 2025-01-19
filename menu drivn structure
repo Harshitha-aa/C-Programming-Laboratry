@@ -1,0 +1,61 @@
+#include <stdio.h>
+#define PI 3.14 // Define PI as 3.14
+
+// Structure definitions
+struct Rectangle {
+    int length;
+    int breadth;
+    int area;
+};
+
+struct Circle {
+    int radius;
+    float area;
+};
+
+struct Triangle {
+    float base;
+    float height;
+    float area;
+};
+
+int main() {
+    int choice;
+    struct Rectangle rect;
+    struct Circle circ;
+    struct Triangle tri;
+
+    // Display the menu
+    printf("Menu :\n1. Rectangle\n2. Circle\n3. Triangle\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1: // Rectangle
+            printf("Enter the length and breadth: ");
+            scanf("%d %d", &rect.length, &rect.breadth);
+            rect.area = rect.length * rect.breadth;
+            printf("Rectangle area: %d\n", rect.area);
+            break;
+
+        case 2: // Circle
+            printf("Enter the radius: ");
+            scanf("%d", &circ.radius);
+            circ.area = PI * circ.radius * circ.radius;
+            printf("Circle area: %.2f\n", circ.area);
+            break;
+
+        case 3: // Triangle
+            printf("Enter the base and height: ");
+            scanf("%f %f", &tri.base, &tri.height);
+            tri.area = 0.5 * tri.base * tri.height;
+            printf("Triangle area: %.2f\n", tri.area);
+            break;
+
+        default: // Invalid choice
+            printf("Invalid choice. Please select 1, 2, or 3.\n");
+            break;
+    }
+
+    return 0;
+}
