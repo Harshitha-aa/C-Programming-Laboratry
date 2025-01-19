@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+   char str[10];
+   scanf("%s",str);
+   int i=0,sum=0;
+   while(str[i]!='\0')
+   {
+       sum=sum+1;
+       i++;
+   }
+   if(sum%2==0)
+   printf("lucky");
+   else
+   printf("not lucky");
+}
