@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a=5,b=6,c=7;
+    int *ap=&a;
+    int *bp=&b;
+    int *cp=&c;
+    if(*ap>*bp && *ap>*cp)
+    printf("a");
+    else if(*bp>*cp)
+    printf("b");
+    else
+    printf("c");
+}
