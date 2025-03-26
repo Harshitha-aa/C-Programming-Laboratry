@@ -1,0 +1,182 @@
+Here’s a basic HTML and CSS code snippet to recreate the Instagram page you sent. This includes the header with the Instagram logo, story section with circular profile pictures, and a feed post with an image and text.
+
+
+---
+
+HTML (index.html)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="logo">Instagram</h1>
+        <div class="icons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-paper-plane"></i>
+        </div>
+    </header>
+
+    <!-- Stories Section -->
+    <section class="stories">
+        <div class="story">
+            <img src="yourstory.jpg" alt="Your Story">
+            <p>Your Story</p>
+        </div>
+        <div class="story">
+            <img src="user1.jpg" alt="User">
+            <p>__sahaxx__</p>
+        </div>
+        <div class="story">
+            <img src="user2.jpg" alt="User">
+            <p>deepan27_10</p>
+        </div>
+        <div class="story">
+            <img src="user3.jpg" alt="User">
+            <p>maha_11</p>
+        </div>
+    </section>
+
+    <!-- Feed Section -->
+    <section class="feed">
+        <div class="post">
+            <div class="post-header">
+                <img src="profile.jpg" alt="RJ Deepak">
+                <p>rj._.deepak</p>
+            </div>
+            <img src="post-image.jpg" alt="Post" class="post-img">
+            <p class="caption"><strong>MALLU GIRL PRANK</strong></p>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+---
+
+CSS (styles.css)
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-family: 'Billabong', cursive;
+    font-size: 35px;
+}
+
+.icons i {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Stories */
+.stories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.story {
+    text-align: center;
+    margin-right: 15px;
+}
+
+.story img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #ff007f;
+}
+
+.story p {
+    font-size: 12px;
+}
+
+/* Feed */
+.feed {
+    padding: 10px;
+}
+
+.post {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+
+---
+
+How to Use:
+
+1. Save the HTML code as index.html.
+
+
+2. Save the CSS code as styles.css.
+
+
+3. Add sample images like:
+
+yourstory.jpg (Your profile pic)
+
+user1.jpg, user2.jpg, user3.jpg (Other users’ stories)
+
+profile.jpg (RJ Deepak's profile picture)
+
+post-image.jpg (Main feed image)
+
+
+
+4. Open index.html in a browser.
+
+
+
+This gives a simple Instagram-like UI with the same sections as in your screenshot! Let me know if you want any modifications.
