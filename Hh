@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="insta_clone.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="head">
+        <p>Instagram</p>
+        <div class="icon"><i class="fa-regular fa-heart"></i></div>
+        <div class="icon"><i class="fa-brands fa-facebook-messenger"></i></div>
+    
+    
+    
+    </div>
+    <div class="story">
+       <div class="a" ><img class="a"  src="C:\Users\leavi\Downloads\1.jpg" alt=""><div class="b">+</div> </div> 
+       <div class="a"><img class="a"  src="C:\Users\leavi\Downloads\1.jpg" alt=""> </div> 
+       <div class="a"><img class="a"  src="C:\Users\leavi\Downloads\1.jpg" alt=""> </div> 
+       <div class="a"><img class="a"  src="C:\Users\leavi\Downloads\1.jpg" alt=""> </div> 
+       <div class="a"><img class="a"  src="C:\Users\leavi\Downloads\1.jpg" alt=""> </div> 
+       <div class="a"><img class="a"  src="C:\Users\leavi\Downloads\1.jpg" alt=""> </div> 
+       <div class="a"><img class="a"  src="C:\Users\leavi\Downloads\1.jpg" alt=""> </div> 
+       <div class="a"><img class="a"  src="C:\Users\leavi\Downloads\1.jpg" alt=""> </div> 
+
+
+
+       <div class="nav">
+ 
+       
+       <div class="navalign"> <i class="fa-solid fa-house"></i></div>
+       <div class="navalign"><i class="fa-solid fa-magnifying-glass"></i></div> 
+       <div class="navalign"><i class="fa-regular fa-square-plus"></i></div>
+       <div class="navalign"><i class="fa-solid fa-clapperboard"></i></div>
+       <div class="navalign"><i class="fa-solid fa-circle-user"></i></div>
+       
+    </div>
+    </div>
+
+
+<div class="po">
+    <div class="post">
+    <div class="text">
+        <div class="profile"><img src="C:\Users\leavi\Downloads\1.jpg" alt=""></div>
+        <div class="p"><p style="font-size: 20px;">hihello</p>  </div>
+        <div class="p"><p style="font-size: 15px;">hihello</p>  </div>
+        <div class="p"><i class="fa-solid fa-ellipsis-vertical"></i> </div>
+        
+    </div>
+    
+    
+    
+    <div class="imgpost"> <img  src="C:\Users\leavi\Downloads\1.jpg" alt=""></div>
+       
+    <div class="share">
+        <div class="sh"><i class="fa-regular fa-heart"><span >12k</span></i></div>
+        <div class="sh"><i class="fa-regular fa-comment"><span >12k</span></i></div>
+        <div class="sh"><i class="fa-regular fa-paper-plane"><span>3.4k</span></i></div>
+        <div class="sh"><i class="fa-regular fa-bookmark"></i></div>
+    </div>
+    <div class="post">
+        <div class="text">
+            <div class="profile"><img src="C:\Users\leavi\Downloads\1.jpg" alt=""></div>
+            <div class="p"><p style="font-size: 20px;">hihello</p>  </div>
+            <div class="p"><p style="font-size: 15px;">hihello</p>  </div>
+            <div class="p"><i class="fa-solid fa-ellipsis-vertical"></i> </div>
+            
+        </div>
+        
+        
+        
+        <div class="imgpost"> <img  src="C:\Users\leavi\Downloads\1.jpg" alt=""></div>
+           
+        <div class="share">
+            <div class="sh"><i class="fa-regular fa-heart"><span >12k</span></i></div>
+            <div class="sh"><i class="fa-regular fa-comment"><span >12k</span></i></div>
+            <div class="sh"><i class="fa-regular fa-paper-plane"><span>3.4k</span></i></div>
+            <div class="sh"><i class="fa-regular fa-bookmark"></i></div>
+        </div>
+    
+        <div class="post">
+            <div class="text">
+                <div class="profile"><img src="C:\Users\leavi\Downloads\1.jpg" alt=""></div>
+                <div class="p"><p style="font-size: 20px;">hihello</p>  </div>
+                <div class="p"><p style="font-size: 15px;">hihello</p>  </div>
+                <div class="p"><i class="fa-solid fa-ellipsis-vertical"></i> </div>
+                
+            </div>
+            
+            
+            
+            <div class="imgpost"> <img  src="C:\Users\leavi\Downloads\1.jpg" alt=""></div>
+               
+            <div class="share">
+                <div class="sh"><i class="fa-regular fa-heart"><span >12k</span></i></div>
+                <div class="sh"><i class="fa-regular fa-comment"><span >12k</span></i></div>
+                <div class="sh"><i class="fa-regular fa-paper-plane"><span>3.4k</span></i></div>
+                <div class="sh"><i class="fa-regular fa-bookmark"></i></div>
+            </div>
+            <div class="post">
+                <div class="text">
+                    <div class="profile"><img src="C:\Users\leavi\Downloads\1.jpg" alt=""></div>
+                    <div class="p"><p style="font-size: 20px;">hihello</p>  </div>
+                    <div class="p"><p style="font-size: 15px;">hihello</p>  </div>
+                    <div class="p"><i class="fa-solid fa-ellipsis-vertical"></i> </div>
+                    
+                </div>
+                
+                
+                
+                <div class="imgpost"> <img  src="C:\Users\leavi\Downloads\1.jpg" alt=""></div>
+                   
+                <div class="share">
+                    <div class="sh"><i class="fa-regular fa-heart"><span >12k</span></i></div>
+                    <div class="sh"><i class="fa-regular fa-comment"><span >12k</span></i></div>
+                    <div class="sh"><i class="fa-regular fa-paper-plane"><span>3.4k</span></i></div>
+                    <div class="sh"><i class="fa-regular fa-bookmark"></i></div>
+                    
+                </div>
+                        
+    
+       </div>
+     
+    
+</body>
+</html>
